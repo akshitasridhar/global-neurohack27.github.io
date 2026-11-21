@@ -1268,6 +1268,41 @@ section {
     color: #8a6300;
 }
 
+.sponsor-tier-badge-silver {
+    background: linear-gradient(135deg, #f0f0f2 0%, #d4d5d9 100%);
+    color: #4a4a4a;
+}
+
+.sponsor-tier-price {
+    margin-top: 14px;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--deep-blue);
+}
+
+.sponsor-benefits {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    color: var(--slate-blue);
+}
+
+.sponsor-benefits li {
+    position: relative;
+    padding-left: 28px;
+}
+
+.sponsor-benefits li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: var(--deep-blue);
+}
+
 .sponsor-tier-badge-partner {
     background: linear-gradient(135deg, #dcf5ff 0%, #bfeaff 100%);
     color: var(--cyan);

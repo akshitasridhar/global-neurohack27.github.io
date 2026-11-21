@@ -67,9 +67,8 @@ window.addEventListener('scroll', setActiveNavLink);
 // Countdown Timer
 // ===================================
 function updateCountdown() {
-    // Set the hackathon date (April 10, 2026 at 9:00 AM PST)
-    // PST is UTC-8, so we need to account for timezone
-    const hackathonDate = new Date('2026-04-10T09:00:00-08:00').getTime();
+    // Hackathon start date comes from <body data-hackathon-date="..."> (ISO 8601 with timezone offset)
+    const hackathonDate = new Date(document.body.dataset.hackathonDate).getTime();
     const now = new Date().getTime();
     const distance = hackathonDate - now;
     
